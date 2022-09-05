@@ -1,0 +1,39 @@
+{
+  "name": "@vertabiz/platform-application",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node dist/server.js",
+    "start:watch": "nodemon src/server.ts",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "ava",
+    "test:watch": "ava --watch"
+  },
+  "main": "dist/server.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@vertabiz/repositories-mongodb": "^1.0.0",
+    "@vertabiz/platform-domain": "^1.0.0",
+    "asynciterator": "^3.7.0",
+    "express": "^4.18.1",
+    "rxjs": "^7.5.6"
+  },
+  "devDependencies": {
+    "@ava/typescript": "^3.0.1",
+    "@types/chance": "^1.1.3",
+    "@types/express": "^4.17.13",
+    "@types/express-serve-static-core": "^4.17.30",
+    "@types/uuid": "^8.3.4",
+    "@vertabiz/platform-api": "^1.0.0",
+    "ava": "^4.3.3",
+    "chance": "^1.1.8",
+    "node-mocks-http": "^1.11.0",
+    "nodemon": "^2.0.19",
+    "ts-essentials": "^9.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
+  }
+}

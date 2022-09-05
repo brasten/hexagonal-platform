@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "workspaces": [
+    "application",
+    "domain",
+    "infrastructure/repositories-mongodb",
+    "api/defs"
+  ],
+  "scripts": {
+    "build": "node ./tasks/concurrently.js build",
+    "test": "node ./tasks/concurrently.js test",
+    "test:watch": "node ./tasks/concurrently.js test:watch",
+    "start": "yarn --cwd ./application start",
+    "start:watch": "yarn --cwd ./application start:watch"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0"
+  }
+}

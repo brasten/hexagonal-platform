@@ -1,0 +1,16 @@
+{
+  "name": "@vertabiz/platform-api",
+  "version": "1.0.0",
+  "scripts": {
+    "gen": "npx openapi-typescript schema.yaml --output gen/schema.d.ts"
+  },
+  "files": [
+    "gen"
+  ],
+  "types": "gen/schema.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "openapi-typescript": "^5.4.1",
+    "typescript": "^4.8.2"
+  }
+}
