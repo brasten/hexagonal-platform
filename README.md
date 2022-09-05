@@ -34,3 +34,13 @@ ideas quickly.
                                                                        
                        └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘
 ```
+
+## Running locally ##
+
+Start by installing dependencies and setting up workspaces:
+
+`$ yarn`
+
+Run server locally:
+
+`$ DATASTORE_URL="mongodb://localhost:27017/<db>" yarn start`
